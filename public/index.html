@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <div>WELCOME TO CHAT APP</div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+        let socket = io(); //send a request to the server // io is a method in that library
+        socket.on("connect", () => {
+            console.log(`connected to the server with Socket id ${socket.id}`);
+        })
+        socket.on("disconnect", () => {
+            console.log("disconected from the server ");
+        })
+    </script>
+
+</body>
+
+</html>
