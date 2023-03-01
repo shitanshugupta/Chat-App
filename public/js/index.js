@@ -12,5 +12,5 @@ socket.on("connect", () => {
     })
 })
 socket.on("disconnect", () => {
-    console.log("disconected from the server ");
+    console.log("disconected from the server with socket id");
 })
